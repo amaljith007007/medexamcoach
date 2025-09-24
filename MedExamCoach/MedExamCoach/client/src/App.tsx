@@ -23,6 +23,7 @@ import AdminQuestions from "./components/AdminQuestions";
 import AdminSettings from "./components/AdminSettings";
 import PracticeView from "./components/PracticeView";
 import MockExamSetup from "./components/MockExamSetup";
+import MedExcelDashboard from "./components/MedExcelDashboard";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 // Import examples for demo
@@ -117,6 +118,9 @@ function ComponentShowcase() {
             </Button>
             <Button variant="outline" data-testid="button-view-docs">
               View Documentation
+            </Button>
+            <Button variant="outline" onClick={() => window.location.href = '/medexcel'}>
+              View MedExcel Dashboard
             </Button>
           </div>
         </div>
@@ -284,6 +288,7 @@ function Router() {
   return (
     <Switch>
       <Route path="/app" component={MainApp} />
+      <Route path="/medexcel" component={MedExcelDashboard} />
       <Route path="/" component={ComponentShowcase} />
     </Switch>
   );
