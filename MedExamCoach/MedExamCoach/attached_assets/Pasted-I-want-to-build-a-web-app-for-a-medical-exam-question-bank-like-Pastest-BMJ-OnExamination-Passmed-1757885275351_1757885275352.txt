@@ -1,0 +1,44 @@
+I want to build a web app for a medical exam question bank (like Pastest, BMJ OnExamination, Passmedicine). 
+Please scaffold a Next.js 14 project with the App Router and TailwindCSS, fully Replit-compatible, with TypeScript.
+
+Use Supabase for authentication and PostgreSQL database. Use Stripe for subscription payments.
+
+The app should have these core pages/components (with placeholder UI and mock data so I can see flow working):
+
+1. **Auth**: Signup/Login page using Supabase Auth.
+2. **Dashboard**: shows user’s progress (percent correct per category, recent practice, subscription status).
+3. **Practice mode**:
+   - Select category of questions.
+   - Show one question at a time (text + 5 options).
+   - User selects answer → show correct/incorrect + explanation.
+   - Next/Prev navigation.
+4. **Mock exam mode**:
+   - Timed exam with countdown timer.
+   - Questions selected randomly (mock proportion logic can be placeholder for now).
+   - After submit → show score + weak categories.
+5. **Admin panel** (basic protected page):
+   - CRUD for questions (add/edit/delete).
+   - Each question has: text, 5 options, correct answer, explanation, category.
+   - Ability to create new mock exams (random or handpicked).
+6. **Payments**:
+   - Integrate Stripe Checkout with subscriptions:
+     - Free plan → access to 10 practice questions only.
+     - Paid plan → full access to all content and mock exams.
+7. **UI style**: clean, mobile-friendly, similar to Pastest/Passmedicine (question card centered, large option buttons, progress bar, timer in mock exam).
+
+Project requirements:
+- Next.js App Router
+- TailwindCSS for UI
+- Supabase for auth and DB
+- Stripe for payments
+- TypeScript
+- Environment variables stored in `.env.local` (use placeholders for Supabase + Stripe keys)
+- Replit-friendly (able to run with `npm run dev`)
+
+Please generate:
+- Basic folder structure
+- Placeholder components and mock data for questions
+- Example Supabase schema as a separate file I can paste into Supabase
+- Stripe integration scaffold (with test mode setup)
+
+Goal: I should be able to run the app on Replit, sign up/login, try practice mode with mock questions, see a mock exam timer flow, and click Stripe Checkout in test mode.
