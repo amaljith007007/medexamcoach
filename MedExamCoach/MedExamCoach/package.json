@@ -1,13 +1,4 @@
 {
   "name": "medexamcoach",
-  "version": "1.0.0",
-  "description": "MedExcel Pro Medical Training Dashboard",
-  "main": "index.html",
-  "scripts": {
-    "build": "echo 'Static HTML - no build needed'",
-    "start": "echo 'Static HTML - no start needed'"
-  },
-  "keywords": ["medical", "dashboard", "training", "education"],
-  "author": "MedExcel Pro",
-  "license": "MIT"
+  "version": "1.0.0"
 }
